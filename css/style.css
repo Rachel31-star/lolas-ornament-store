@@ -62,3 +62,70 @@ footer {
     background-color: #3b2520;
     color: white;
 }
+/* ===== MOBILE MENU ===== */
+
+.site-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 20px;
+    background-color: #ffffff;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.menu-button,
+.close-button {
+    border: none;
+    background: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.cart-icon {
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -280px;
+    width: 280px;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 25px;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    box-shadow: 4px 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+.sidebar h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sidebar nav a {
+    text-decoration: none;
+    color: #3b2520;
+    font-size: 17px;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
